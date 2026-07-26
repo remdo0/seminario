@@ -1,0 +1,102 @@
+/* ── Inicio ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7e7d0;
+}
+
+/* Fondo con color crema */
+.fondo {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  min-height: 480px;
+  background: #f5f0e8;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+/* Contenedor central */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Título */
+.titulo {
+  font-size: 26px;
+  font-weight: 400;
+  color: #7dbcb0;
+  text-align: center;
+}
+
+/* Espacio para imagen */
+.imagen-placeholder {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #d4c4b0;
+  background: #f9f4ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.imagen-placeholder span {
+  font-size: 13px;
+  color: #b0a090;
+  padding: 12px;
+  line-height: 1.4;
+}
+
+/* Botones */
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 14px 0;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+.btn-registrar {
+  background: #7dbcb0;
+}
+
+.btn-sesion {
+  background: #e8a87c;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+      <link rel="stylesheet" href="estilos/estilo2.css" />
+</head>
+<body>
+     <div class="contenedor">
+      <h1 class="titulo">Iniciar Sesión</h1>
+
+      <div class="imagen-placeholder">
+       <span><img src="imagenes/logo.png" width= "120" height="120" alt="Logo"></span>
+      </div>
+
+<form class="formulario" action="php/login.php" method="POST" autocomplete="off">
+
+    <div class="campo">
+        <label>Nombre usuario</label>
+        <input type="text" name="usuario" required>
+    </div>
+
+    <div class="campo">
+        <label>Contraseña</label>
+        <input type="password" name="contrasena" required>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+
+</form>
+    </div> 
+
+  </div>
+  </body>
+</html>

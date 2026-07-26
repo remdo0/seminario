@@ -1,0 +1,240 @@
+/* ── Perfil ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f0e8;
+  min-height: 100vh;
+}
+
+/* ── Banner superior ── */
+.banner {
+  width: 100%;
+  height: 140px;
+  background: #e8d8c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pagina{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 20px;
+    gap:30px;
+}
+/* ── Columna izquierda ── */
+.columna-izquierda{
+    flex:1;
+    min-width:0;
+}
+
+/* ── Tarjeta bienvenida ── */
+.tarjeta-bienvenida {
+  background: white;
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  flex-wrap: wrap;
+}
+
+.bienvenida-izq {
+  min-width: 160px;
+  flex: 1;
+}
+
+.saludo {
+  font-size: 17px;
+  font-weight: 600;
+  color: #5a4a3a;
+  margin-bottom: 6px;
+}
+
+.sub-saludo {
+  font-size: 12px;
+  color: #9a8878;
+  line-height: 1.5;
+}
+
+.bienvenida-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.stat-icono {
+  font-size: 26px;
+  margin-top: 2px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #9a8878;
+  margin-bottom: 2px;
+}
+
+.stat-numero {
+  font-size: 28px;
+  font-weight: 700;
+  color: #5a4a3a;
+  line-height: 1;
+}
+
+.stat-sub {
+  font-size: 11px;
+  color: #9a8878;
+  margin-top: 2px;
+}
+
+.stat-desc {
+  font-size: 11px;
+  color: #9a8878;
+  max-width: 160px;
+  line-height: 1.5;
+}
+
+/* ── Sección Mis Reportes ── */
+.seccion-reportes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo-reportes {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7dbcb0;
+}
+
+.sub-reportes {
+  font-size: 12px;
+  color: #9a8878;
+}
+
+/* ── Lista de reportes ── */
+.lista-reportes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reporte {
+  background: white;
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+
+/* Placeholder foto */
+.reporte-foto {
+  width: 74px;
+  height: 60px;
+  border-radius: 10px;
+  background: #e8d8c0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #a08060;
+}
+
+/* Para imagen real:
+   <img src="foto.jpg" class="reporte-foto" alt="mascota" />
+   .reporte-foto { object-fit: cover; } */
+
+.reporte-info {
+  flex: 1;
+  min-width: 130px;
+}
+
+.reporte-titulo {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5a4a3a;
+  margin-bottom: 4px;
+}
+
+.reporte-meta {
+  font-size: 11px;
+  color: #9a8878;
+}
+
+/* Badge publicado */
+.badge-publicado {
+  background: #d4edda;
+  color: #4a8a5a;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+
+.columna-derecha{
+    width:220px;
+    flex-shrink:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-circulo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #d4c4b0;
+  background: #f9f4ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #b0a090;
+}
+
+.nav-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-nav {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 50px;
+  background: #e8a87c;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-nav:hover {
+  opacity: 0.88;
+}

@@ -1,0 +1,174 @@
+/* ── Menu ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f0e8;
+  min-height: 100vh;
+}
+
+/* ── Banner superior ── */
+.banner {
+  width: 100%;
+  height: 140px;
+  background: #e8d8c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pagina {
+  display: flex;
+  gap: 24px;
+  padding: 24px 28px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+
+.columna-izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo {
+  font-size: 22px;
+  font-weight: 400;
+  color: #7dbcb0;
+}
+
+.lista-reportes {
+  background: white;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.reporte {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reporte-imagen {
+  width: 72px;
+  height: 62px;
+  border-radius: 10px;
+  background: #e8d8c0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #a08060;
+}
+
+.reporte-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reporte-titulo {
+  font-size: 13px;
+  color: #5a4a3a;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.reporte-desc {
+  font-size: 12px;
+  color: #9a8878;
+}
+
+.reporte-acciones {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btn-modificar,
+.btn-eliminar {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 50px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-modificar {
+  background: #f5f0e8;
+  color: #7a6a5a;
+  border: 1px solid #d4c4b0;
+}
+
+.btn-eliminar {
+  background: #fde8e8;
+  color: #c0504a;
+  border: 1px solid #f0c4c4;
+}
+
+.btn-modificar:hover,
+.btn-eliminar:hover {
+  opacity: 0.78;
+}
+
+.columna-derecha {
+  width: 180px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.logo-circulo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid #d4c4b0;
+  background: #f9f4ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #b0a090;
+}
+
+.nav-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-nav {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 50px;
+  background: #e8a87c;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-nav:hover {
+  opacity: 0.88;
+}

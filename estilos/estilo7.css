@@ -1,0 +1,190 @@
+/* ── Adopcion ── */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f0e8;
+  min-height: 100vh;
+}
+
+/* ── Banner ── */
+.banner {
+  width: 100%;
+  height: 140px;
+  background: #e8d8c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pagina {
+  display: flex;
+  gap: 28px;
+  padding: 24px 32px;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* ── Columna izquierda ── */
+.columna-izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #7dbcb0;
+}
+
+/* ── Tarjeta animal ── */
+.tarjeta-animal {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  display: flex;
+  gap: 18px;
+  padding: 14px;
+  align-items: flex-start;
+}
+
+/* Foto del animal */
+.animal-foto {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e8d8c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #a08060;
+  overflow: hidden;
+}
+
+/* Para imagen real reemplaza el div por:
+<img src="foto.jpg" class="animal-foto" alt="animal" />
+y agrega al CSS: img.animal-foto { object-fit: cover; } */
+
+/* Info del animal */
+.animal-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.animal-encabezado {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.animal-nombre {
+  font-size: 18px;
+  font-weight: 700;
+  color: #5a4a3a;
+}
+
+/* Badges */
+.badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.badge-perra,
+.badge-perro {
+  background: #fde8d8;
+  color: #c07040;
+}
+
+.badge-gato {
+  background: #d8f0e8;
+  color: #3a9070;
+}
+
+/* Fila de detalle */
+.animal-detalle {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.det-icono {
+  font-size: 14px;
+  margin-top: 1px;
+  flex-shrink: 0;
+  color: #c08060;
+}
+
+.animal-detalle p {
+  font-size: 13px;
+  color: #6a5a4a;
+  line-height: 1.45;
+}
+
+.animal-detalle p strong {
+  color: #5a4a3a;
+}
+
+/* ── Columna derecha ── */
+.columna-derecha {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.logo-circulo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #d4c4b0;
+  background: #f9f4ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #b0a090;
+}
+
+.nav-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.btn-nav {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 50px;
+  background: #e8a87c;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-nav:hover {
+  opacity: 0.88;
+}
